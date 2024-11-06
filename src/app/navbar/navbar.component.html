@@ -1,0 +1,14 @@
+<nav class="navbar">
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+      <li><a href="/contact" (click)="toggleContactForm()">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Contact Form Section -->
+  <div *ngIf="showContactForm" class="contact-form">
+    <app-contact></app-contact>
+  </div>
+  
